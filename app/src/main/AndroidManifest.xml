@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.collect" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_ID" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CromosColecction"
+            android:label="@string/title_activity_main_activity2" >
+        </activity>
+        <activity
+            android:name=".CromoDetailActivity"
+            android:label="@string/title_activity_show_cromo_activity_end" >
+        </activity>
+        <activity
+            android:name=".MainCamera"
+            android:label="@string/title_activity_main_camera" >
+        </activity>
+        <activity
+            android:name=".LoginFacebook"
+            android:label="@string/title_activity_main" >
+        </activity>
+
+        <provider
+            android:name=".MyFileContentProvider"
+            android:authorities="com.example.camerademo"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Downloads"
+            android:label="@string/title_activity_downloads" >
+        </activity>
+        <activity
+            android:name=".DownloadedAlbums"
+            android:label="@string/title_activity_main_activity32" >
+        </activity>
+        <activity
+            android:name=".FirstActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>
